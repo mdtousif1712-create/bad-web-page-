@@ -1,5 +1,5 @@
 const FRAME_COUNT = 240;
-const FRAME_PATH = (index) => `public/frames/frame_${String(index).padStart(5, "0")}.jpg`;
+const FRAME_PATH = (index) => `assets/frames/frame_${String(index).padStart(5, "0")}.jpg`;
 
 document.body.classList.add("is-loading");
 
