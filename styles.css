@@ -892,6 +892,9 @@ p {
   }
 
   .nav {
+    top: 1rem;
+    left: 1rem;
+    width: calc(100% - 2rem);
     grid-template-columns: auto auto;
     border-radius: 28px;
     padding: 0.45rem 0.6rem 0.45rem 1rem;
@@ -937,13 +940,16 @@ p {
   .hero {
     position: relative;
     min-height: auto;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     padding-top: 132px;
     padding-bottom: 4rem;
   }
 
   .hero__visual {
-    min-height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 40vh;
     order: -1;
   }
 
@@ -968,6 +974,11 @@ p {
     grid-template-columns: 1fr;
   }
 
+  .faq h2 {
+    text-align: left;
+    order: -1;
+  }
+
   .gallery {
     grid-template-columns: 1fr;
   }
@@ -989,11 +1000,11 @@ p {
 
 @media (max-width: 620px) {
   h1 {
-    font-size: clamp(4.6rem, 24vw, 7rem);
+    font-size: clamp(3.2rem, 15vw, 4.6rem);
   }
 
   h2 {
-    font-size: clamp(3.8rem, 20vw, 6.4rem);
+    font-size: clamp(2.8rem, 12vw, 3.8rem);
   }
 
   .hero__actions,
@@ -1013,7 +1024,12 @@ p {
   }
 
   .stats__item {
-    min-height: 140px;
+    min-height: 120px;
+    padding: 1rem;
+  }
+
+  .stats__item strong {
+    font-size: clamp(2.8rem, 10vw, 4rem);
   }
 }
 
