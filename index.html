@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="BAGZZ is a premium backpack brand showcase for modern professionals, students, travelers, and everyday movers." />
+  <title>BAGZZ | Carry The Future</title>
+  <link rel="preload" as="image" href="public/frames/frame_00000.jpg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="loader" aria-live="polite">
+    <div class="loader__brand">BAGZZ</div>
+    <div class="loader__track"><span></span></div>
+  </div>
+
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" aria-hidden="true"></div>
+
+  <div class="ambient" aria-hidden="true">
+    <span class="ambient__mesh ambient__mesh--one"></span>
+    <span class="ambient__mesh ambient__mesh--two"></span>
+    <span class="ambient__grid"></span>
+    <span class="ambient__noise"></span>
+  </div>
+
+  <header class="nav" data-nav>
+    <a class="nav__logo magnetic" href="#home" aria-label="BAGZZ home">BAGZZ</a>
+    <button class="nav__toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav__links" aria-label="Primary navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#collections">Collections</a>
+      <a href="#technology">Technology</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav__cta magnetic" href="#contact">Get Quote</a>
+  </header>
+
+  <main>
+    <section class="hero-scroll" id="home">
+      <div class="hero">
+        <div class="hero__copy reveal">
+          <p class="eyebrow">Luxury carry systems for the now crowd</p>
+          <h1>CARRY<br />THE<br />FUTURE.</h1>
+          <p class="hero__lead">
+            Premium backpacks engineered for professionals, students, travelers, and
+            modern lifestyles that refuse basic.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary magnetic" href="#collections">Explore Collection</a>
+            <a class="button button--ghost magnetic" href="#contact">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="hero__visual" data-parallax>
+          <span class="hero__glow"></span>
+          <canvas id="bagCanvas" width="1280" height="720" aria-label="Rotating premium backpack"></canvas>
+          <img class="hero__fallback" src="public/frames/frame_00000.jpg" alt="Premium BAGZZ backpack" />
+          <div class="hero__meter" aria-hidden="true"><span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section" aria-label="Brand statistics">
+      <div class="stats__item reveal">
+        <strong data-count="10">0</strong><span>Years Experience</span>
+      </div>
+      <div class="stats__item reveal">
+        <strong data-count="100">0</strong><span>K+ Bags Manufactured</span>
+      </div>
+      <div class="stats__item reveal">
+        <strong data-count="500">0</strong><span>Business Clients</span>
+      </div>
+      <div class="stats__item reveal">
+        <strong data-count="25">0</strong><span>Countries Served</span>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section__kicker reveal">About BAGZZ</div>
+      <div class="about__grid">
+        <h2 class="reveal">DESIGNED<br />TO<br />PERFORM.</h2>
+        <div class="about__text reveal">
+          <p>
+            BAGZZ builds backpacks like modern tools: sharp silhouettes, tactile
+            materials, organized interiors, and durability that stays low-key until life
+            gets messy.
+          </p>
+          <p>
+            From weekday commutes to airport runs, each carry profile is shaped for
+            rhythm, protection, and confidence. Minimal outside. Maximum intent inside.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="collections section" id="collections">
+      <div class="section__head">
+        <div>
+          <p class="section__kicker reveal">Featured Collections</p>
+          <h2 class="reveal">BUILT FOR<br />EVERY MOVE.</h2>
+        </div>
+        <p class="section__intro reveal">
+          No endless catalog. Just the carry categories people actually live in.
+        </p>
+      </div>
+      <div class="collection-grid">
+        <article class="collection-card tilt reveal">
+          <img src="public/frames/frame_00012.jpg" alt="Business backpack" loading="lazy" />
+          <div>
+            <h3>Business Backpacks</h3>
+            <p>Sharp profiles with laptop safety, document zones, and boardroom calm.</p>
+          </div>
+        </article>
+        <article class="collection-card tilt reveal">
+          <img src="public/frames/frame_00052.jpg" alt="Travel backpack" loading="lazy" />
+          <div>
+            <h3>Travel Backpacks</h3>
+            <p>Weekend capacity, fast access, and cabin-ready structure for airport mode.</p>
+          </div>
+        </article>
+        <article class="collection-card tilt reveal">
+          <img src="public/frames/frame_00092.jpg" alt="Laptop backpack" loading="lazy" />
+          <div>
+            <h3>Laptop Backpacks</h3>
+            <p>Foam-protected compartments with cable flow and everyday balance.</p>
+          </div>
+        </article>
+        <article class="collection-card tilt reveal">
+          <img src="public/frames/frame_00132.jpg" alt="College backpack" loading="lazy" />
+          <div>
+            <h3>College Backpacks</h3>
+            <p>Light, expressive, and ready for classes, cafes, and sudden plans.</p>
+          </div>
+        </article>
+        <article class="collection-card tilt reveal">
+          <img src="public/frames/frame_00172.jpg" alt="Executive bag" loading="lazy" />
+          <div>
+            <h3>Executive Bags</h3>
+            <p>Minimal lines, premium finishes, and quiet authority for daily leadership.</p>
+          </div>
+        </article>
+        <article class="collection-card tilt reveal">
+          <img src="public/frames/frame_00212.jpg" alt="Daily carry bag" loading="lazy" />
+          <div>
+            <h3>Daily Carry Bags</h3>
+            <p>Compact organization for gym, work, side quests, and everything between.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="technology section" id="technology">
+      <div class="section__head">
+        <div>
+          <p class="section__kicker reveal">Technology</p>
+          <h2 class="reveal">SMART<br />UNDER<br />PRESSURE.</h2>
+        </div>
+        <p class="section__intro reveal">
+          Protection, access, and comfort are engineered into the bag before the first
+          zipper ever moves.
+        </p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card tilt reveal"><span>01</span>
+          <h3>Water Resistant</h3>
+        </article>
+        <article class="feature-card tilt reveal"><span>02</span>
+          <h3>Laptop Protection</h3>
+        </article>
+        <article class="feature-card tilt reveal"><span>03</span>
+          <h3>Premium Zippers</h3>
+        </article>
+        <article class="feature-card tilt reveal"><span>04</span>
+          <h3>Hidden Compartments</h3>
+        </article>
+        <article class="feature-card tilt reveal"><span>05</span>
+          <h3>USB Charging</h3>
+        </article>
+        <article class="feature-card tilt reveal"><span>06</span>
+          <h3>Anti-Theft Design</h3>
+        </article>
+        <article class="feature-card tilt reveal"><span>07</span>
+          <h3>Scratch Resistant</h3>
+        </article>
+        <article class="feature-card tilt reveal"><span>08</span>
+          <h3>Lightweight Build</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="why section">
+      <p class="section__kicker reveal">Why Choose BAGZZ</p>
+      <h2 class="reveal">CARRY<br />WITHOUT<br />LIMITS.</h2>
+      <div class="why__grid">
+        <article class="why-card tilt reveal">
+          <h3>Premium Materials</h3>
+          <p>Textured surfaces, reinforced seams, and hardware that feels deliberate.</p>
+        </article>
+        <article class="why-card tilt reveal">
+          <h3>Minimal Design</h3>
+          <p>Clean silhouettes that match office fits, travel fits, and campus fits.</p>
+        </article>
+        <article class="why-card tilt reveal">
+          <h3>Engineered Durability</h3>
+          <p>Stress points, padding, and access zones built for repeated daily use.</p>
+        </article>
+        <article class="why-card tilt reveal">
+          <h3>Everyday Life</h3>
+          <p>Designed around the way people actually move, switch, pack, and improvise.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery section" aria-label="Lifestyle gallery">
+      <div class="gallery__item reveal">
+        <img src="public/frames/frame_00028.jpg" alt="Front view premium backpack" loading="lazy" />
+        <span>City Mode</span>
+      </div>
+      <div class="gallery__item reveal">
+        <img src="public/frames/frame_00078.jpg" alt="Angled premium backpack" loading="lazy" />
+        <span>Flight Fit</span>
+      </div>
+      <div class="gallery__item reveal">
+        <img src="public/frames/frame_00148.jpg" alt="Side view premium backpack" loading="lazy" />
+        <span>Work Ready</span>
+      </div>
+    </section>
+
+    <section class="testimonials section">
+      <div class="section__head">
+        <div>
+          <p class="section__kicker reveal">Testimonials</p>
+          <h2 class="reveal">QUIETLY<br />OBSESSED.</h2>
+        </div>
+      </div>
+      <div class="marquee" aria-label="Customer reviews">
+        <div class="marquee__track">
+          <article>Feels premium without screaming for attention. Exactly my lane.</article>
+          <article>The laptop protection is solid, and the design works everywhere.</article>
+          <article>Our corporate gifting batch looked way more expensive than expected.</article>
+          <article>Clean, practical, and very commute-proof.</article>
+          <article>Feels premium without screaming for attention. Exactly my lane.</article>
+          <article>The laptop protection is solid, and the design works everywhere.</article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section">
+      <div>
+        <p class="section__kicker reveal" style="margin-bottom: 2rem;">FAQ</p>
+        <div class="faq__list reveal">
+          <details>
+            <summary>Is BAGZZ an ecommerce website?</summary>
+            <p>No. BAGZZ is presented as a premium brand showcase for inquiries, bulk orders, and direct purchases.</p>
+          </details>
+          <details>
+            <summary>Do you support corporate or bulk orders?</summary>
+            <p>Yes. Teams can request custom quantities, gifting batches, and business-focused backpack solutions.</p>
+          </details>
+          <details>
+            <summary>Are the bags laptop friendly?</summary>
+            <p>Most BAGZZ categories prioritize laptop protection, organized pockets, and daily device access.</p>
+          </details>
+          <details>
+            <summary>What is your return policy?</summary>
+            <p>We offer a 30-day window for unused items with original tags intact. Corporate orders are subject to
+              custom terms.</p>
+          </details>
+          <details>
+            <summary>Do you ship internationally?</summary>
+            <p>Yes, we ship globally. Shipping times and duties vary by region and are calculated at checkout.</p>
+          </details>
+          <details>
+            <summary>How should I clean my bag?</summary>
+            <p>Spot clean with a damp cloth and mild soap. Avoid machine washing or harsh chemicals to preserve the
+              protective coatings.</p>
+          </details>
+        </div>
+      </div>
+      <h2 class="reveal">FAST<br />ANSWERS.</h2>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact__copy reveal">
+        <p class="section__kicker">Contact</p>
+        <h2>GET<br />THE<br />QUOTE.</h2>
+        <p>
+          Tell BAGZZ what you need: corporate orders, institutional supply, retail
+          partnerships, or a direct purchase inquiry.
+        </p>
+        <div class="contact__details">
+          <a href="mailto:hello@bagzz.in">hello@bagzz.in</a>
+          <a href="tel:+919999999999">+91 99999 99999</a>
+          <a href="https://wa.me/919999999999" target="_blank" rel="noreferrer">WhatsApp BAGZZ</a>
+        </div>
+      </div>
+      <form class="contact__form reveal">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" autocomplete="name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+        <label>
+          <span>Inquiry Type</span>
+          <select name="type">
+            <option>Bulk order</option>
+            <option>Retail partnership</option>
+            <option>Direct purchase</option>
+            <option>Brand collaboration</option>
+          </select>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="button button--primary magnetic" type="submit">Request a Quote</button>
+      </form>
+      <div class="contact__map reveal" aria-label="BAGZZ service area map">
+        <span></span>
+        <strong>INDIA BASED<br />GLOBAL READY</strong>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="footer__logo" href="#home">BAGZZ</a>
+    <nav aria-label="Footer navigation">
+      <a href="#about">About</a>
+      <a href="#collections">Collections</a>
+      <a href="#technology">Technology</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p>2026 BAGZZ. Premium backpack manufacturer.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
